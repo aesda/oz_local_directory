@@ -7,6 +7,7 @@ import Login from './pages/login.jsx';
 import Register from './pages/Register.jsx';
 import AuthLayout from './layouts/AuthLayout.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
+import ResetPassword from './pages/ResetPassword.jsx';
 
 
 
@@ -22,7 +23,9 @@ createRoot(document.getElementById('root')).render(
       <Route element={<AuthLayout />}>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="forgotPassword" element={<ForgotPassword />} />
+        <Route path="forgot-Password" element={<ForgotPassword />} />
+        <Route path="resetPassword" element={<ResetPassword />} />
+        
      </Route> 
     </Routes>
   </BrowserRouter>
